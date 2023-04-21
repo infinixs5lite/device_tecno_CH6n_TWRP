@@ -24,11 +24,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     bootctrl.mt6768
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    Fastbootd
-
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
