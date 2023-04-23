@@ -22,6 +22,8 @@ AB_OTA_PARTITIONS += \
     vbmeta_system
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+TW_INCLUDE_REPACKTOOLS := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -89,6 +91,9 @@ BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 PRODUCT_PLATFORM := mt6765
+
+# MTK
+BOARD_USES_MTK_HARDWARE := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
