@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery
-    fastbootd \
+    fastbootd
 
 PRODUCT_PACKAGES += \
     bootctrl.mt6768
