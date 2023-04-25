@@ -21,6 +21,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6768
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    fastbootd
+
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
