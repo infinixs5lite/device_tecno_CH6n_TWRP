@@ -24,6 +24,11 @@ PRODUCT_BRAND := TECNO
 PRODUCT_MODEL := TECNO CH6n
 PRODUCT_MANUFACTURER := tecno
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
