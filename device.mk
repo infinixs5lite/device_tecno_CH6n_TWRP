@@ -25,6 +25,7 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
+TW_INCLUDE_FASTBOOTD := true
 
 # Health Hal
 PRODUCT_PACKAGES += \
