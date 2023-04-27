@@ -15,13 +15,15 @@ product             /product         ext4      ro     wait,slotselect,avb,logica
 /misc         emmc       /dev/block/platform/bootdevice/by-name/misc               defaults defaults
 
 # Images
-/super          	 emmc    	/dev/block/platform/bootdevice/by-name/super            flags=backup=1;display="Super_image";flashimg=1;wipeingui
-/system_image	    emmc  	/dev/block/mapper/system                flags=backup=1;flashimg=1;display="System Image";slotselect;wipeingui
-/system     		     ext4	     /dev/block/mapper/system 
-/vendor_image	    emmc  	/dev/block/mapper/vendor                flags=backup=1;flashimg=1;display="Vendor Image";slotselect;wipeingui
-/vendor              ext4      /dev/block/mapper/vendor 
-/system_ext_image	    emmc  	/dev/block/mapper/system_ext                flags=backup=1;flashimg=1;display="System_ext Image";slotselect;wipeingui
-/product_image	          emmc  	/dev/block/mapper/product                   flags=backup=1;flashimg=1;display="Product Image";slotselect;wipeingui
+/super           emmc    	/dev/block/platform/bootdevice/by-name/super            flags=backup=1;display="Super_image";flashimg=1;wipeingui
+/system_image    emmc  	        /dev/block/mapper/system                               flags=backup=1;flashimg=1;display="System Image";slotselect;wipeingui
+/system          ext4	        /dev/block/mapper/system 
+/vendor_image	 emmc   	/dev/block/mapper/vendor                              flags=backup=1;flashimg=1;display="Vendor Image";slotselect;wipeingui
+/vendor          ext4           /dev/block/mapper/vendor 
+/system_ext_image emmc          /dev/block/mapper/system_ext                          flags=backup=1;flashimg=1;display="System_ext Image";slotselect;wipeingui
+/product_image    emmc  	/dev/block/mapper/product                             flags=backup=1;flashimg=1;display="Product Image";slotselect;wipeingui
+/product          emmc          /dev/block/by-name/product                            flags=backup=1;display="Product";flashimg=1;slotselect;wipeingui
+/product          ext4	        /dev/block/mapper/product
 
 # Common partition                                                                                        
 /boot            emmc    /dev/block/by-name/boot               flags=backup=1;display="Boot";flashimg=1;slotselect;wipeingui
